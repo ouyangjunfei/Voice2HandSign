@@ -20,6 +20,10 @@ def getPicsDatas(sentence, image_path):
         sentence = word[i - 1].text
         sentence = sentence + ' : ' + explain[(i - 1) * 2].text
         data.append(sentence)
-        img_src = explain[2 * i - 1].find('img').get('src')
-        request.urlretrieve('http:' + img_src, path + str(i - 1) + '.png')
+        if '暂无该词手语' in explain[(i - 1) * 2].text:
+            explain.insert(7, '')
+            print('图片不存在')
+        else:
+            img_src = explain[2 * i - 1].find('img').get('src')
+            request.urlretrieve('http:' + img_src, path + str(i - 1) + '.png')
     return data

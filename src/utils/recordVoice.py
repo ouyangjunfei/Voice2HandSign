@@ -6,7 +6,7 @@ CHUNK = 1024
 FORMAT = pyaudio.paInt16
 CHANNELS = 1
 RATE = 16000
-RECORD_SECONDS = 5
+RECORD_SECONDS = 6
 
 
 # 录音部分函数，filename为wav文件所在地址
