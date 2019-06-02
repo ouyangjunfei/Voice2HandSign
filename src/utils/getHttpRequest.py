@@ -11,6 +11,8 @@ import requests
 import time
 import hashlib
 import base64
+import json
+import sys
 
 # 听写的webapi接口地址
 URL = "http://api.xfyun.cn/v1/service/v1/iat"
@@ -22,15 +24,14 @@ API_KEY = "eef12c12673c48ff8ae195c32cac922a"
 
 def getHeader(aue, engineType):
     curTime = str(int(time.time()))
-    # curTime = '1526542623'
     param = "{\"aue\":\"" + aue + "\"" + ",\"engine_type\":\"" + engineType + "\"}"
-    print("param:{}".format(param))
+    # print("param:{}".format(param))
     paramBase64 = str(base64.b64encode(param.encode('utf-8')), 'utf-8')
-    #print("x_param:{}".format(paramBase64))
+    # print("x_param:{}".format(paramBase64))
     m2 = hashlib.md5()
     m2.update((API_KEY + curTime + paramBase64).encode('utf-8'))
     checkSum = m2.hexdigest()
-    #print('checkSum:{}'.format(checkSum))
+    # print('checkSum:{}'.format(checkSum))
     # http请求头
     header = {
         'X-CurTime': curTime,
@@ -39,32 +40,44 @@ def getHeader(aue, engineType):
         'X-CheckSum': checkSum,
         'Content-Type': 'application/x-www-form-urlencoded; charset=utf-8',
     }
-    print(header)
+    # print(header)
     return header
 
 
 def getBody(filepath):
     binfile = open(filepath, 'rb')
     data = {'audio': base64.b64encode(binfile.read())}
-    print(data)
-    print('data:{}'.format(type(data['audio'])))
+    # print(data)
+    # print('data:{}'.format(type(data['audio'])))
     # print("type(data['audio']):{}".format(type(data['audio'])))
     return data
 
 
-#  音频编码
-aue = "raw"
-#  引擎类型
-# （听写服务：engine_type为识别引擎类型，开通webapi听写服务后默认识别普通话与英文：示例音频请在听写接口文档底部下载
-#  sms16k（16k采样率、16bit普通话音频、单声道、pcm或者wav）
-#  sms8k（8k采样率、16bit普通话音频、单声道、pcm或者wav）
-#  sms-en16k（16k采样率，16bit英语音频，单声道，pcm或者wav）
-#  sms-en8k（8k采样率，16bit英语音频，单声道，pcm或者wav）
-#  请使用cool edit Pro软件查看音频格式是否满足相应的识别引擎类型，不满足则识别为空（即返回的data为空，code为0），或者识别为错误文本）
-#  音频格式转换可参考（讯飞开放平台语音识别音频文件格式说明）：https://doc.xfyun.cn/rest_api/%E9%9F%B3%E9%A2%91%E6%A0%BC%E5%BC%8F%E8%AF%
-engineType = "sms16k"
-# 音频文件地址,示例音频请在听写接口文档底部下载
-audioFilePath = r"resources/iat_pcm_16k.pcm"
-headers=getHeader(aue, engineType)
-#r = requests.post(URL, headers=getHeader(aue, engineType), data=getBody(audioFilePath))
-#print(r.content.decode('utf-8'))
+def getWordsfromJson(body):
+    datas = json.loads(body)
+    return datas['data']
+
+
+def postRequest():
+    #  音频编码
+    aue = "raw"
+    #  引擎类型
+    # （听写服务：engine_type为识别引擎类型，开通webapi听写服务后默认识别普通话与英文：示例音频请在听写接口文档底部下载
+    #  sms16k（16k采样率、16bit普通话音频、单声道、pcm或者wav）
+    #  sms8k（8k采样率、16bit普通话音频、单声道、pcm或者wav）
+    #  sms-en16k（16k采样率，16bit英语音频，单声道，pcm或者wav）
+    #  sms-en8k（8k采样率，16bit英语音频，单声道，pcm或者wav）
+    #  请使用cool edit Pro软件查看音频格式是否满足相应的识别引擎类型，不满足则识别为空（即返回的data为空，code为0），或者识别为错误文本）
+    #  音频格式转换可参考（讯飞开放平台语音识别音频文件格式说明）：https://doc.xfyun.cn/rest_api/%E9%9F%B3%E9%A2%91%E6%A0%BC%E5%BC%8F%E8%AF%
+    engineType = "sms16k"
+    path = sys.path[1]
+    # 音频文件地址
+    audioFilePath = path + r"\resources\iat_pcm_16k.pcm"
+    r = requests.post(URL, headers=getHeader(aue, engineType), data=getBody(audioFilePath))
+    body = r.content.decode('utf-8')
+    words = getWordsfromJson(body)
+    return words
+
+
+if __name__ == '__main__':
+    print(postRequest());
