@@ -19,7 +19,8 @@ class Window(QWidget):
         self.image_path = image_path
         self.topFiller = QWidget(self)
         self.scroll = QScrollArea(self)
-        self.btn = QPushButton(self)
+        self.btn_start = QPushButton(self)
+        self.btn_clear = QPushButton(self)
         self.setbackgroundcolor(255, 255, 255)
         self.resize(400, 600)
         self.setWindowTitle("语音转换手语图")
@@ -27,10 +28,21 @@ class Window(QWidget):
         self.scroll.move(0, 100)
         self.topFiller.setMinimumSize(360, 500)
         self.scroll.show()
-        self.btn.setText("开始")
-        self.btn.move(140, 30)
-        self.btn.clicked.connect(self.record)
+        self.btn_start.setText("开始")
+        self.btn_start.move(60, 30)
+        self.btn_start.clicked.connect(self.record)
+        self.btn_clear.setText("清空")
+        self.btn_clear.move(240, 30)
+        self.btn_clear.clicked.connect(self.clearall)
         self.show()
+
+    def clearall(self):
+        for i in range(0, len(self.labels)):
+            self.labels[i].close()
+            self.texts[i].close()
+        self.labels.clear()
+        self.texts.clear()
+        print("清空")
 
     def setbackgroundcolor(self, r, g, b):
         palette = QtGui.QPalette()
@@ -38,6 +50,7 @@ class Window(QWidget):
         self.setPalette(palette)
 
     def record(self):
+        # print("开始")
         recordVoice(self.voice_path)
         words = postRequest(self.voice_path)
         data = getPicsDatas(words, self.image_path)
@@ -52,7 +65,7 @@ class Window(QWidget):
             self.labels[i].move(80, 50 + 200 * i)
             self.texts.append(QLabel(self.topFiller))
             self.texts[i].setText((data)[i])
-            self.texts[i].setFixedSize(180, 20)
+            self.texts[i].setFixedSize(500, 20)
             self.texts[i].move(80, 50 + 200 * i + 150)
             self.topFiller.setMinimumSize(360, 50 + 200 * (i + 1))
             img = QPixmap(self.image_path + str(i) + '.png')

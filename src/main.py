@@ -1,6 +1,6 @@
 # -*-coding:utf-8-*-
 
-from utils.gui import *
+from gui.picsgui import *
 
 import sys
 import os

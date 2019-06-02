@@ -3,13 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="b4ef97f9-3385-4f66-b593-47ee599ab7ce" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/basic_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/basic_controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/getHttpRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/getHttpRequest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/getPictures.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/getPictures.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/test.wav" beforeDir="false" afterPath="$PROJECT_DIR$/resources/test.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/basic_controller.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/picsgui.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="228">
+              <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
               <folding>
                 <element signature="e#22#45#0" expanded="true" />
               </folding>
@@ -34,8 +34,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/utils/recordVoice.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-column="20" />
+            <state relative-caret-position="171">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="e#21#35#0" expanded="true" />
               </folding>
@@ -43,13 +43,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/utils/gui.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gui/picsgui.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
+            <state relative-caret-position="79">
+              <caret line="46" column="11" selection-start-line="46" selection-start-column="11" selection-end-line="46" selection-end-column="11" />
               <folding>
-                <element signature="e#1#35#0" expanded="true" />
+                <element signature="e#22#56#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -89,6 +89,7 @@
         <option value="$PROJECT_DIR$/src/utils/recordVoice.py" />
         <option value="$PROJECT_DIR$/src/main.py" />
         <option value="$PROJECT_DIR$/src/utils/gui.py" />
+        <option value="$PROJECT_DIR$/src/gui/picsgui.py" />
       </list>
     </option>
   </component>
@@ -102,9 +103,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="473" />
-    <option name="y" value="109" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="601" />
+    <option name="y" value="11" />
     <option name="width" value="1940" />
     <option name="height" value="1040" />
   </component>
@@ -132,13 +133,8 @@
             <path>
               <item name="Voice2HandSign" type="b2602c69:ProjectViewProjectNode" />
               <item name="Voice2HandSign" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Voice2HandSign" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Voice2HandSign" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -159,6 +155,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\PyProjects\Voice2HandSign\src\gui" />
       <recent name="E:\PyProjects\Voice2HandSign\src\demo" />
     </key>
   </component>
@@ -229,7 +226,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/utils/gui.py" />
+      <option name="SCRIPT_NAME" value="E:\PyProjects\Voice2HandSign\src\gui\picsgui.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -316,7 +313,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1654373" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16491044" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -342,11 +339,6 @@
           <url>file://$PROJECT_DIR$/src/controllers/basic_controller.py</url>
           <line>19</line>
           <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/utils/gui.py</url>
-          <line>23</line>
-          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -384,32 +376,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/images/0.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/images/1.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/images/2.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/images/3.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="1757" selection-start-line="1757" selection-end-line="1757" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/demo/iat_python3_demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-          <folding>
-            <element signature="e#572#587#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -419,16 +389,6 @@
           <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/basic_controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
-          <folding>
-            <element signature="e#22#64#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -443,10 +403,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/basic_controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+          <folding>
+            <element signature="e#22#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/demo/iat_python3_demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+          <folding>
+            <element signature="e#572#587#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/images/3.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/images/2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/images/1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/images/0.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/picsgui.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="46" column="11" selection-start-line="46" selection-start-column="11" selection-end-line="46" selection-end-column="11" />
+          <folding>
+            <element signature="e#22#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/recordVoice.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="20" />
+        <state relative-caret-position="171">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="e#21#35#0" expanded="true" />
           </folding>
@@ -455,20 +457,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="228">
+          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
           <folding>
             <element signature="e#22#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/gui.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
-          <folding>
-            <element signature="e#1#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
