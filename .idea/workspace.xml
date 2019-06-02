@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4ef97f9-3385-4f66-b593-47ee599ab7ce" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/images/0.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/images/1.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/images/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/test.wav" beforeDir="false" afterPath="$PROJECT_DIR$/resources/test.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/picsgui.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/picsgui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/getPictures.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/getPictures.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/recordVoice.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/recordVoice.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/test.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="9" lean-forward="true" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+            <state relative-caret-position="228">
+              <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
               <folding>
                 <element signature="e#22#47#0" expanded="true" />
               </folding>
@@ -68,11 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/utils/getPictures.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+            <state relative-caret-position="190">
+              <caret line="23" column="27" lean-forward="true" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -113,11 +110,11 @@
         <option value="$PROJECT_DIR$/src/utils/getHttpRequest.py" />
         <option value="$PROJECT_DIR$/src/controllers/basic_controller.py" />
         <option value="$PROJECT_DIR$/src/utils/gui.py" />
-        <option value="$PROJECT_DIR$/src/main.py" />
         <option value="$PROJECT_DIR$/src/docker.py" />
         <option value="$PROJECT_DIR$/src/utils/recordVoice.py" />
         <option value="$PROJECT_DIR$/src/gui/picsgui.py" />
         <option value="$PROJECT_DIR$/src/utils/getPictures.py" />
+        <option value="$PROJECT_DIR$/src/main.py" />
       </list>
     </option>
   </component>
@@ -131,7 +128,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="391" />
     <option name="y" value="25" />
     <option name="width" value="1937" />
@@ -161,19 +158,7 @@
             <path>
               <item name="Voice2HandSign" type="b2602c69:ProjectViewProjectNode" />
               <item name="Voice2HandSign" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Voice2HandSign" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Voice2HandSign" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Voice2HandSign" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Voice2HandSign" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -357,7 +342,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49947312" visible="true" weight="0.31083483" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49947312" weight="0.31083483" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39786857" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -453,9 +438,6 @@
     <entry file="file://$PROJECT_DIR$/resources/images/0.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/images/4.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/images/5.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -539,22 +521,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.py">
+    <entry file="file://$PROJECT_DIR$/src/utils/getPictures.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="9" lean-forward="true" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+        <state relative-caret-position="190">
+          <caret line="23" column="27" lean-forward="true" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
           <folding>
-            <element signature="e#22#47#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/getPictures.py">
+    <entry file="file://$PROJECT_DIR$/resources/images/4.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+        <state relative-caret-position="228">
+          <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#22#47#0" expanded="true" />
           </folding>
         </state>
       </provider>
