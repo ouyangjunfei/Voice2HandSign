@@ -72,11 +72,12 @@ def postRequest():
     engineType = "sms16k"
     path = sys.path[1]
     # 音频文件地址
-    audioFilePath = path + r"\resources\iat_pcm_16k.pcm"
+    audioFilePath = path + r"\resources\i_like_you.wav"
     r = requests.post(URL, headers=getHeader(aue, engineType), data=getBody(audioFilePath))
     body = r.content.decode('utf-8')
     words = getWordsfromJson(body)
-    return words
+    # print(type(words))
+    return words[0:-1]
 
 
 if __name__ == '__main__':
