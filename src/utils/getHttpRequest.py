@@ -16,9 +16,9 @@ import json
 # 听写的webapi接口地址
 URL = "http://api.xfyun.cn/v1/service/v1/iat"
 # 应用APPID（必须为webapi类型应用，并开通语音听写服务，参考帖子如何创建一个webapi应用：http://bbs.xfyun.cn/forum.php?mod=viewthread&tid=36481）
-APPID = "5cf332a3"
+APPID = "*******"
 # 接口密钥（webapi类型应用开通听写服务后，控制台--我的应用---语音听写---相应服务的apikey）
-API_KEY = "eef12c12673c48ff8ae195c32cac922a"
+API_KEY = "************"
 
 
 def getHeader(aue, engineType):
